@@ -1,6 +1,7 @@
 package DataSetup;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 
@@ -15,7 +16,8 @@ public class CreateList {
 		while(size == 0) {
 			size = rand.nextInt(maxLength);
 		}
-		arrList = new ArrayList<Integer>();// Arrays.asList(10,11)
+		arrList = new ArrayList<Integer>();
+//		arrList.addAll(Arrays.asList(81, 92, 86, 86, 83, 59, 7, 87, 21));
 		for (Integer i = 0; i < size; i++) {
 			arrList.add(rand.nextInt(maxRecordValue));
 		}
